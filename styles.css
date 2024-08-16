@@ -1,0 +1,299 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.cta-btn {
+    background-color: #ff6b6b;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    margin-right: -2px;
+}
+
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: white;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* Optional: Add padding around the image */
+}
+
+.hero-image img {
+    max-width: 90%;
+    /* Ensure image scales within container */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    /* Optional: Add border radius for rounded corners */
+}
+
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-btn-large {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Top Websites Section */
+.top-websites {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.top-websites h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.website-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.website-list li {
+    flex: 1 1 calc(33.333% - 20px);
+    /* Three items per row on large screens */
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.website-list h3 {
+    margin-top: 0;
+}
+
+.website-list a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.website-list a:hover {
+    text-decoration: underline;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+
+}
+
+.why-choose-us h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature {
+    max-width: 300px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin-left: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.two a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+@media (max-width: 1200px) {
+    .website-list li {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .website-list li {
+        flex: 1 1 100%;
+    }
+
+    .cta-btn {
+        margin-right: -3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .cta-btn-large {
+        padding: 10px;
+        margin-right: -5px;
+    }
+
+    .top-websites h2,
+    .why-choose-us h2 {
+        font-size: 20px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        margin-bottom: 20px;
+    }
+
+    .footer-links li {
+        margin-bottom: 5px;
+    }
+
+    span {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 5px;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+        margin-left: 5px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .two {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        margin: -10px;
+    }
+}
